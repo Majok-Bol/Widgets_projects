@@ -9,7 +9,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('My first app'), centerTitle: true),
+        appBar: AppBar(
+          title: Text(
+            'My first app',
+            style: TextStyle(fontSize: 30, color: Colors.redAccent),
+          ),
+          centerTitle: true,
+        ),
+        body: Center(
+          child: Text(
+            'Iam learning Flutter',
+            style: TextStyle(fontSize: 30, color: Colors.blueAccent),
+          ),
+        ),
       ),
     );
   }
